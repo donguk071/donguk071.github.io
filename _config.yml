@@ -12,7 +12,7 @@ future: true
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com' and baseurl as '/child'
-url: https://blog.donguk.dev
+url: 'https://blog.donguk.dev'
 baseurl:
 permalink: pretty
 
