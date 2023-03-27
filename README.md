@@ -1,4 +1,4 @@
-# YJYOON's Code Story
+# ALL ABOUT CV
 
 ## 주요 포스팅 주제
 - 알고리즘 문제 풀이
@@ -12,4 +12,3 @@
 - 점점 추가 예정
 
 ## 스크린샷
-![0](/assets/images/readme.png)
