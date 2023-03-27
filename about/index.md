@@ -5,7 +5,9 @@ type: about
 
 ## Profile
 
-### Yeojun Yoon
+</br>
+
+### DongUk Kim
 - dragon071@naver.com
 - Kwangwoon University
 - CV / DL developer
