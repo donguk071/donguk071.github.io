@@ -1,4 +1,4 @@
-# YJYOON's Code Story
+# All About CV
 
 ## 주요 포스팅 주제
 - 알고리즘 문제 풀이

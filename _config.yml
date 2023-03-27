@@ -1,9 +1,9 @@
 # Site
-title: YJYOON's Code Story
-subtitle: Android Developer
-description: yjyoon.dev@gmail.com
-signature: yjyoon.dev@gmail.com
-author: Yeojun Yoon
+title: All About CV
+subtitle: AI Developer
+description: rlaehddnr0712@gmail.com
+signature: rlaehddnr0712@gmail.com
+author: DongUk Kim
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: ko
 date_format: '%Y-%m-%d'
@@ -12,7 +12,7 @@ future: true
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com' and baseurl as '/child'
-url: https://blog.yjyoon.dev
+url: https://blog.donguk.dev
 baseurl:
 permalink: pretty
 
@@ -77,7 +77,7 @@ plugins:
 favicon: /assets/favicon.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "yjyoon"
+keywords: "donguk"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -212,8 +212,8 @@ font:
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
 social:
-  Github: https://github.com/yjyoon-dev
-  LinkedIn: https://www.linkedin.com/in/yjyoon-dev
+  Github: https://github.com/donguk071
+  LinkedIn: 
 # Social Links Icons
 # Icon Mapping:
 #   Map a menu item to a specific FontAwesome icon name.
@@ -228,7 +228,7 @@ social_icons:
 
 # Sidebar Avatar
 # in directory: /assets/images/avatar.gif
-avatar: /assets/images/avatar.png
+avatar: /assets/images/avatar.jpg
 
 
 # Table Of Contents in the Sidebar
@@ -376,7 +376,7 @@ han: false
 # Disqus
 disqus:
   enable: false
-  shortname: yjyoon
+  shortname: donguk
   count: true
   # hide comments (visitors need to click to load the comments)
   # count need to be false when hide is true
@@ -431,11 +431,11 @@ changyan:
 # Support for gitalk comments system.
 gitalk:
   enable: true
-  clientID: 8b37cd6cd67c1a25b15b
-  clientSecret: 19f681553fe85871acae06a3b95489bce4553650
-  repo: yjyoon-dev.github.io
-  owner: yjyoon-dev
-  admin: [yjyoon-dev]
+  clientID: 82d952b8672781e64d8b
+  clientSecret: 4491fd6e1e0b66352370d6981a7b5bfa4f8cca0e
+  repo: donguk071.github.io
+  owner: donguk071
+  admin: [donguk071]
 
 # Baidu Share
 # Available value:
