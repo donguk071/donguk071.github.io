@@ -6,14 +6,13 @@ type: about
 ## Profile
 
 ### Yeojun Yoon
-- yjyoon.dev@gmail.com
+- dragon071@naver.com
 - Kwangwoon University
-- Android Developer
+- CV / DL developer
 
 ### Link
-- [https://github.com/yjyoon-dev](https://github.com/yjyoon-dev)
-- [https://www.linkedin.com/in/yjyoon-dev](https://www.linkedin.com/in/yjyoon-dev/)
-- [https://yjyoon-dev.github.io](https://yjyoon-dev.github.io/)
+- [https://github.com/donguk071](https://github.com/donguk071)
+- [https://donguk071.github.io](https://donguk071.github.io)
 
 ---
 
@@ -21,50 +20,46 @@ type: about
 
 Part | Tech Stack | Environment
 ---|---|---
-Mobile | Android, Flutter | Kotlin, Dart
-Front-End | React, Flutter | Javascript, Dart
-Back-End | SpringBoot, Ktor, Flask, JPA, MySQL | Kotlin, Java, Python
-Dev-Ops | AWS, GCP, Docker, Nginx | Linux
+Simulation | Unreal Engine | C++, Blueprints
+DeepLearning | Tensorflow | Python
+ComputerVision | openCV | Python ,C++
+AR/ VR| Three.js, Panda3D | Python, JavaScript
 
 ---
 
 ## Internship
 
-- Neurosky, Inc. *(2022.08 ~ 2022.12)*
-  - Android Developer
-  - U.S. 캘리포니아 실리콘밸리 소재 해외 기업
+- Visual informatics Lab(Kwangwoon univ) *(2021.08 ~ )*
+  - Studing CV , Sensor calibration  tech 
   
 ---
 
-## Experience
+## Publication
 
-- SW마이스터고 연합 해커톤 멘토 *(2022.10)*
-- 미국 산호세 주립대 SVSTIP *(2022.07 ~ 2022.08)*
-- YAPP 20기 안드로이드 YB *(2022.04 ~ 2021.08)*
-- SW 마에스트로 12기 *(2021.04 ~ 2021.12)*
-  
+- HCI Academy of Korea
+  - 선박용 3 차원 서라운드 뷰 학습모델을 위한 사용자평가 기반의 학습 데이터 합성 *(2022.12)*
+
+---
+
+## Experience and Education
+
+- Qualcomm Institute, UC San Diego *(SanDiego, CA, US) *
+  - Qualcomm Institute AI Development Project *(2022.07 ~ 2022.08) *
+
+
 ---
 
 ## Achievement
 
-- 공개SW 개발자대회 **금상** *(2022)*
-- SW중심대학 공동 해커톤 **우수상** *(2022)*
-- 중앙대학교 캠퍼스타운 창업경진대회 **대상** *(2022)*
-- SW 마에스트로 12기 해커톤 **최우수상** *(2021)*
-- 광운대학교 AI 아이디어 공모전 **우수상** *(2018)*
+- AI 공동 경진대회 **장관상(대상)** *(2022)*
+- 참빛설계학기 **우수상** *(2022)*
 
 ---
 
-## SW Certificate
+## Certificate
 
-- TOPCIT Level 3 (Score 543)
-- AWS Certified Solutions Architect - Associate
+- no........
 
----
-
-## SW Patent
-
-- 오프라인 SNS 해시태그 이벤트 관리 시스템 특허 *(2021.10.20)*
 
 ---
 
