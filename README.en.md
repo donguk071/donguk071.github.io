@@ -106,7 +106,7 @@ NexT can automatically add links to your Social Media accounts:
 
 ```yml
 social:
-  GitHub: your-github-url
+  GitHub: https://github.com/donguk071
   Twitter: your-twitter-url
   Weibo: your-weibo-url
   DouBan: your-douban-url
