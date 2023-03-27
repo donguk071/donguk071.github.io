@@ -1,20 +1,18 @@
-# ---------------------------------------------------------------
-# Jekyll & Global Configuration
-## Docs: https://jekyllrb.com/docs/configuration/
-# ---------------------------------------------------------------
-
 # Site
-title: All about CV
-subtitle:
-description:
-author: DongUk Kim
+title: YJYOON's Code Story
+subtitle: Android Developer
+description: yjyoon.dev@gmail.com
+signature: yjyoon.dev@gmail.com
+author: Yeojun Yoon
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
-language: en
+language: ko
 date_format: '%Y-%m-%d'
+
+future: true
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com' and baseurl as '/child'
-url:
+url: https://blog.yjyoon.dev
 baseurl:
 permalink: pretty
 
@@ -46,9 +44,6 @@ highlight:
 #### Markdown Processors
 ## 'redcarpet' is unsupported on GitHub Pages now.
 markdown: kramdown
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
 kramdown:
     input: GFM
 
@@ -79,21 +74,21 @@ plugins:
 # ---------------------------------------------------------------
 
 # Put your favicon.ico into `assets/` directory.
-favicon: /assets/dust.ico
+favicon: /assets/favicon.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "Jekyll, NexT"
+keywords: "yjyoon"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
 # Set rss to specific value if you have burned your feed already.
-rss:
+rss: false
 
 # Specify the date when the site was setup
-#since: 2015
+since: 2020
 
 # icon between year and author @Footer
-authoricon: heart
+authoricon: code
 
 # Footer `powered-by` and `theme-info` copyright
 copyright: true
@@ -108,7 +103,7 @@ copyright: true
 canonical: true
 
 # Change headers hierarchy on site-subtitle (will be main site description) and on all post/pages titles for better SEO-optimization.
-seo: false
+seo: true
 
 # If true, will add site-subtitle to index page, added in jekyll config.
 # subtitle: Subtitle
@@ -121,10 +116,10 @@ index_with_subtitle: false
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   home: /
-  #categories: /categories/
-  #about: /about/
+  categories: /categories/
   archives: /archives/
   tags: /tags/
+  about: /about/
   #sitemap: /sitemap.xml
   #commonweal: /404.html
 
@@ -155,8 +150,8 @@ menu_icons:
 
 # Schemes
 #scheme: Muse
-scheme: Mist
-#scheme: Pisces
+#scheme: Mist
+scheme: Pisces
 
 
 # ---------------------------------------------------------------
@@ -217,10 +212,8 @@ font:
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
 social:
-  # LinkLabel: 
-  Github : https://github.com/nokcharathae
-
-
+  Github: https://github.com/yjyoon-dev
+  LinkedIn: https://www.linkedin.com/in/yjyoon-dev
 # Social Links Icons
 # Icon Mapping:
 #   Map a menu item to a specific FontAwesome icon name.
@@ -230,14 +223,12 @@ social_icons:
   enable: true
   # Icon Mappings.
   # KeyMapsToSocialItemKey: NameOfTheIconFromFontAwesome
-  GitHub: github
-  Twitter: twitter
-  Weibo: weibo
-
+  Github: github
+  LinkedIn: linkedin
 
 # Sidebar Avatar
 # in directory: /assets/images/avatar.gif
-avatar: /assets/images/증명사진.jpg
+avatar: /assets/images/avatar.png
 
 
 # Table Of Contents in the Sidebar
@@ -245,7 +236,7 @@ toc:
   enable: true
 
   # Automatically add list number to toc.
-  number: true
+  number: false
 
   # If true, all words will placed on next lines if header width longer then sidebar width.
   wrap: false
@@ -281,7 +272,7 @@ sidebar:
   b2t: false
 
   # Scroll percent label in b2t button
-  scrollpercent: false
+  scrollpercent: true
 
 
 # Blog rolls
@@ -385,7 +376,7 @@ han: false
 # Disqus
 disqus:
   enable: false
-  shortname: ADDA
+  shortname: yjyoon
   count: true
   # hide comments (visitors need to click to load the comments)
   # count need to be false when hide is true
@@ -439,12 +430,12 @@ changyan:
 
 # Support for gitalk comments system.
 gitalk:
-  enable: false
-  clientID: # 54730ddf7b9420460c03
-  clientSecret: # c05684701b25ff1c19ea0c01ce4d80c125e0707d
-  repo: # colingpt.github.io
-  owner: # colingpt
-  admin: # colingpt
+  enable: true
+  clientID: 8b37cd6cd67c1a25b15b
+  clientSecret: 19f681553fe85871acae06a3b95489bce4553650
+  repo: yjyoon-dev.github.io
+  owner: yjyoon-dev
+  admin: [yjyoon-dev]
 
 # Baidu Share
 # Available value:
@@ -466,7 +457,7 @@ gitalk:
 #google_site_verification:
 
 # Google Analytics
-#google_analytics:
+google_analytics: 'UA-180600057-1'
 
 # Yandex Webmaster tools verification setting
 # See: https://webmaster.yandex.ru/
@@ -520,8 +511,8 @@ vkontakte_api:
 # To get your ID visit https://widgetpack.com
 rating:
   enable: false
-  id:     #<app_id>
-  color:  fc6423
+  id: 34472
+  color: 222222
 
 
 # Show number of visitors to each article.
@@ -590,7 +581,7 @@ algolia_search:
 
 # Local search
 local_search:
-  enable: false
+  enable: true
   # if auto, trigger search by changing input
   # if manual, trigger search by pressing enter key or search button
   trigger: auto
@@ -615,7 +606,7 @@ use_motion: true
 fancybox: true
 
 # Progress bar in the top during page loading.
-pace: false
+pace: true
 # Themes list:
 #pace-theme-big-counter
 #pace-theme-bounce

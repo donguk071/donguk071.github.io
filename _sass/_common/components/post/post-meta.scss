@@ -13,13 +13,22 @@
   .post-category-list-link { color: $grey-dark; }
 
   .post-description {
-    font-size: 14px;
+    font-size: 15px;
     margin-top: 2px;
   }
 }
 
 .post-wordcount {
   display: inline-block;
+}
+
+.post-views {
+  display: inline-block;
+  
+  img {
+    display: inline;
+    vertical-align: middle;
+  }
 }
 
 .post-meta-divider {

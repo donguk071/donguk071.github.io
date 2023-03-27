@@ -20,7 +20,7 @@ $black-dim    : #333;
 $black-deep   : #222;
 $red          : #ff2a2a;
 $blue-bright  : #87daff;
-$blue         : #0684bd;
+$blue         : #81A6ED;
 $blue-deep    : #262a30;
 $orange       : #fc6423;
 
@@ -31,7 +31,7 @@ $orange       : #fc6423;
 // --------------------------------------------------
 
 // Global text color on <body>
-$text-color                   : $black-light;
+$text-color                   : $black-deep;
 
 // Global link color.
 $link-color                   : $black-light;
@@ -91,7 +91,7 @@ $font-weight-bolder       : 700;
 
 
 // Font size
-$font-size-base           : 14px;
+$font-size-base           : 16px;
 $font-size-small          : $font-size-base - 2px;
 $font-size-smaller        : $font-size-base - 4px;
 $font-size-large          : $font-size-base + 2px;
@@ -99,8 +99,8 @@ $font-size-larger         : $font-size-base + 4px;
 
 
 // Headings font size
-$font-size-headings-step    : 2px;
-$font-size-headings-base    : 24px;
+$font-size-headings-step    : 6px;
+$font-size-headings-base    : 42px;
 $font-size-headings-small   : $font-size-headings-base - $font-size-headings-step;
 $font-size-headings-smaller : $font-size-headings-small - $font-size-headings-step;
 $font-size-headings-large   : $font-size-headings-base + $font-size-headings-step;
@@ -142,7 +142,7 @@ $table-row-hover-bg-color       : $whitesmoke;
 // Code & Code Blocks
 // --------------------------------------------------
 $code-font-family               : $font-family-monospace;
-$code-font-size                 : 13px;
+$code-font-size                 : 15px;
 $code-font-size                 : if(type-of(jekyll-config('font.codes.size')) == 'number', jekyll-config('font.codes.size') + px, $code-font-size);
 $code-border-radius             : 3px;
 $code-foreground                : $black-light;
@@ -189,14 +189,14 @@ $pagination-active-border       : $grey-light;
 // Layout sizes
 // --------------------------------------------------
 
-$main-desktop                   : 960px;
-$main-desktop-large             : 1200px;
+$main-desktop                   : 1322px;
+$main-desktop-large             : 1662px;
 
-$content-desktop                : 700px;
-$content-desktop-large          : 900px;
+$content-desktop                : 1050px;
+$content-desktop-large          : 1350px;
 $content-desktop-padding        : 40px;
 
-$sidebar-desktop                : 240px;
+$sidebar-desktop                : 260px;
 
 $footer-height                  : 50px;
 
