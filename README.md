@@ -10,6 +10,3 @@
 - BOJ
 - kakao
 - 점점 추가 예정
-
-## 스크린샷
-![0](/assets/images/readme.png)
