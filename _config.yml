@@ -431,8 +431,8 @@ changyan:
 # Support for gitalk comments system.
 gitalk:
   enable: true
-  clientID: 82d952b8672781e64d8b
-  clientSecret: 4491fd6e1e0b66352370d6981a7b5bfa4f8cca0e
+  clientID: 5faf5aca9599138deb98
+  clientSecret: 4cfa028d36562fb9b0081ee5d923d54af9d0e33a
   repo: donguk071.github.io
   owner: donguk071
   admin: [donguk071]

@@ -3,9 +3,7 @@ layout: page
 type: about
 ---
 
-## Profile
 
-</br>
 
 ### DongUk Kim
 - dragon071@naver.com
@@ -45,16 +43,16 @@ AR/ VR| Three.js, Panda3D | Python, JavaScript
 
 ## Experience and Education
 
-- Qualcomm Institute, UC San Diego *(SanDiego, CA, US) *
-  - Qualcomm Institute AI Development Project *(2022.07 ~ 2022.08) *
+- Qualcomm Institute, UC San Diego  *(SanDiego, CA, US) *
+  - Qualcomm Institute AI Development Project  *(2022.07 ~ 2022.08) *
 
 
 ---
 
 ## Achievement
 
-- AI 공동 경진대회 **장관상(대상)** *(2022)*
-- 참빛설계학기 **우수상** *(2022)*
+- AI 공동 경진대회    **장관상(대상)** *(2022)*
+- 참빛설계학기    **우수상** *(2022)*
 
 ---
 
