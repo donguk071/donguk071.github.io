@@ -12,7 +12,7 @@ future: true
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com' and baseurl as '/child'
-url: 
+url: https://donguk071.github.io/
 baseurl:
 permalink: pretty
 
@@ -435,7 +435,7 @@ gitalk:
   clientSecret: 4cfa028d36562fb9b0081ee5d923d54af9d0e33a
   repo: donguk071.github.io
   owner: donguk071
-  admin: [donguk071]
+  admin: donguk071
 
 # Baidu Share
 # Available value:
