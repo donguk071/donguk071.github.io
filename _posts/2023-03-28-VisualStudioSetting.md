@@ -152,8 +152,8 @@ SSH key등록을 하는 github 설정 창이다. 만약 모든 과정을 잘 마
     
 5. 이제 Variant를 Release로 설정한 후  build all 을 시도하여본다 마찬가지로 status bar에서 조절이 가능하다.
     
-    ![Untitled](../assets/post_images/visualstudioCenv/Untitled%205.png)
-    
+    ![Untitled](assets/post_images/visualstudioCenv/Untitled 5.png)
+ 
 6. 이제 원하는 cpp 파일을 실행하거나 디버그 하면 된다!(status bar을 이것저것 눌러보며 기능을 탐색하는 것을 추천한다.)
 
 ![Untitled](../assets/post_images/visualstudioCenv/Untitled%206.png)
