@@ -2,9 +2,9 @@
 layout: post
 title: "[환경구축] C / CPP + Visual Studio"
 date: 2023-03-28
-categories:  C/CPP 개발환경 Cmake Clang Ninja
-photos: /assets/post_images/titleImg/MLP_title.jpg
-tags: [C/CPP 개발환경 CS용어정리] 
+categories:  C/CPP 개발환경 Cmake Clang Ninja VScode git ssh github
+photos: #/assets/post_images/titleImg/MLP_title.jpg
+tags: [C/CPP 개발환경설정 CS용어정리 VScode git ssh github] 
 description: "Cmake Clang Ninja를 이용한 Visual Studio 개발 환경 구축과 간단한 개념 정리"
 published: true
 ---
@@ -76,13 +76,14 @@ CMake Tools: microsoft
 6. CMake: configure  (generate a build system for your project based on the contents of your env)
 7. 하단 Status bar에서 프로젝트 빌드, 실행 등 진행 가능 , CMake: Select Variant 에서 Debug, Release 등 선택 가능
 
-![Untitled](assets\post_images\visualstudioCenv\Untitled.png)
+![Untitled](../assets/post_images/visualstudioCenv/Untitled.png)
 
-![Untitled](assets\post_images\visualstudioCenv\Untitled 1.png)
+![Untitled](../assets/post_images/visualstudioCenv/Untitled%201.png)
 
-![Untitled](assets\post_images\visualstudioCenv\Untitled 2.png)
+![Untitled](../assets/post_images/visualstudioCenv/Untitled%202.png)
 
-![Untitled](assets\post_images\visualstudioCenv\Untitled 3.png)
+![Untitled](../assets/post_images/visualstudioCenv/Untitled%203.png)
+
 
 **기본 용어 정리**
 
@@ -116,7 +117,7 @@ ssh -T git@github.com #깃허브와 연결해준다
 #git 설정이 처음인 사람들은 git config 를 통해 이메일과 유저명을 추가적으로 등록해주어야한다
 ```
 
-![Untitled](assets\post_images\visualstudioCenv\Untitled 4.png)
+![Untitled](../assets/post_images/visualstudioCenv/Untitled%204.png)
 
 SSH key등록을 하는 github 설정 창이다. 만약 모든 과정을 잘 마무리하였다면 문제없이 SSH를 이용하여 프로젝트를 clone해올 수 있을 것이다. 
 
@@ -151,11 +152,11 @@ SSH key등록을 하는 github 설정 창이다. 만약 모든 과정을 잘 마
     
 5. 이제 Variant를 Release로 설정한 후  build all 을 시도하여본다 마찬가지로 status bar에서 조절이 가능하다.
     
-    ![Untitled](assets\post_images\visualstudioCenv\Untitled 5.png)
+    ![Untitled](../assets/post_images/visualstudioCenv/Untitled%205.png)
     
 6. 이제 원하는 cpp 파일을 실행하거나 디버그 하면 된다!(status bar을 이것저것 눌러보며 기능을 탐색하는 것을 추천한다.)
 
-![Untitled](assets\post_images\visualstudioCenv\Untitled 6.png)
+![Untitled](../assets/post_images/visualstudioCenv/Untitled%206.png)
 
 
 <br/>
