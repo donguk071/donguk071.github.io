@@ -1,0 +1,78 @@
+---
+layout: post
+title: "[배경지식] loss function 정리"
+date: 2023-04-03
+categories:  DeepLearning 기본개념
+photos: /assets/post_images/titleImg/lossfunction.png
+tags: [DeepLearning, lossfunction, mse, rmse, crossentropy] 
+description: "여러 lossfunction 을 정리하고 상황에 따른 loss function 을 선택하는 능력을 길러보자"
+published: true
+---
+
+<br/>
+<br/>
+
+본 포스팅에서는 최대한 많은 loss function을 간단하게  목표이며, 상시로 관련 정보를 업데이트할 것이다.
+(loss function만으로도 작성되는 논문이 많을 정도로 loss function은 수많은 연구 거리가
+ 있을 적으로 큰 분야이기 때문에 다양한 loss function을 접하며 안목을 기르는 것도 중요할 것 같다)
+
+<br/>
+<br/>
+
+# Loss Function
+
+
+모델에 특성과 목표에 따라 사용하여야 하는 loss function 은 모두 다르다. 해당 포스트에서는 오고 가며 접한 모든 loss function의 특성과 의미를 정리할 것이며, 이를 바탕으로 향후 모델을 직접 설계할때 어떤한 loss function을 결정 혹은 제작하는 능력을 기르는 것을 목표로 한다.
+
+
+## 알아둔다면 좋은 용어 정리
+
+**sparse_**
+
+- loss 명 앞에 sparse 라는 용어가 추가된다면 이는 one-hot-encoding 이 진행되지 않은 label(1,2,3,4 …..)을 대할 때 사용된다.
+
+**binary_**
+
+- 예측 label이 2개(0,1)일 경우 사용된다. activaion function 은 sigmoid와 같은 특성을 띄는 것을 사용해야 함을 명시하자
+
+**categorical_**
+
+- 예측 label에 대하여 one-hot-encoding([0,0,0,1] , [0,1,0,0]……)을 진행하여 준다. 번거롭게 이러한 작업을 진행하는 이유는 예측 결과를 vector로 보는 것이 각각 label에 대한 예측 값([0,0.8,0,1] , [0.1,1,0.2,0]……)을 알 수 있다는 장점이 있기 때문이다.
+
+**entropy_**
+
+- entropy는 정보 이론과 관련된 용어이다. 정보 이론을 잘 알지는 못하지만 일반적으로 정보량이 높으면 entropy가 높다.
+
+## loss function
+
+Classification
+
+1. ****binary_crossentropy****
+    
+    binary classification 문제를 해결할 때 사용한다.  
+    
+2. ****categorical_crossentropy****
+    
+    multi label classificaion 문제에 사용한다. 다만 label이 one hot encoding 되어야 한다. 
+    
+3. ****sparse_categorical_crossentropy****
+    
+    multi label classificaion 문제에 사용한다.  다만 label이 정수형일 경우 사용 가능하다. 
+    
+4. ****means squared error(MSE)****
+    
+    regression 모델에서 가장 흔하게 접할 수 있는 loss funcion 이다. 오차 제곱의 합
+    
+5. **Root mean squared error(RMSE)**
+    
+    이상치에 민감하다는 MSE 의 단점을 보완 하기 위해서 만들어졌다.   이름에서 알 수듯이 root를 이용 scale에 민감도를 덜어준 것을 알 수 있다. 
+    
+
+---
+
+loss function을 추가로 접하는 데로 상시 추가하겠습니다.
+<br/>
+
+궁금한 점이 있다면 남겨주세요! 함께 고민해보겠습니다.
+
+------------------------
