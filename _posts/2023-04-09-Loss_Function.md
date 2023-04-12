@@ -22,6 +22,10 @@ published: true
 # Loss Function
 
 
+<br/>
+
+
+
 모델에 특성과 목표에 따라 사용하여야 하는 loss function 은 모두 다르다. 해당 포스트에서는 오고 가며 접한 모든 loss function의 특성과 의미를 정리할 것이며, 이를 바탕으로 향후 모델을 직접 설계할때 어떤한 loss function을 결정 혹은 제작하는 능력을 기르는 것을 목표로 한다.
 
 
@@ -43,9 +47,13 @@ published: true
 
 - entropy는 정보 이론과 관련된 용어이다. 정보 이론을 잘 알지는 못하지만 일반적으로 정보량이 높으면 entropy가 높다.
 
-## loss function
 
-Classification
+<br/>
+
+## basic Loss Functions 
+
+<br/>
+
 
 1. ****binary_crossentropy****
     
@@ -58,7 +66,7 @@ Classification
 3. ****sparse_categorical_crossentropy****
     
     multi label classificaion 문제에 사용한다.  다만 label이 정수형일 경우 사용 가능하다. 
-    
+
 4. ****means squared error(MSE)****
     
     regression 모델에서 가장 흔하게 접할 수 있는 loss funcion 이다. 오차 제곱의 합
