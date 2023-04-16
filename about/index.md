@@ -59,8 +59,14 @@ AR/ VR| Three.js, Panda3D | Python, JavaScript
 
 ## Project
 
-- 
-- 
+unreal engine 을 이용한 왜곡없는 선박용 SVM 생성
+- DeepLearning
+  - lidar super resolution
+  - image segmentaion 
+
+- implementation
+  - sensor simulation/calibraion
+  - unreal engine 
 
 ---
 
@@ -71,4 +77,4 @@ AR/ VR| Three.js, Panda3D | Python, JavaScript
 
 ---
 
-> *Effort and luck will meet someday*
+> *블로그 작성 규칙*
