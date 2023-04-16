@@ -7,6 +7,8 @@ photos: /assets/post_images/titleImg/vsc_c_cpp.png
 tags: [C/CPP,개발환경설정, CS용어정리, VScode] 
 description: "Cmake Clang Ninja를 이용한 VScode 개발 환경 구축과 간단한 개념 정리"
 published: true
+use_math: true
+
 ---
 
 <br/>

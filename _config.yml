@@ -47,6 +47,13 @@ markdown: kramdown
 kramdown:
     input: GFM
 
+# Math equation My add dw
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
 # Default Attributes
 ## Docs: https://jekyllrb.com/docs/configuration/#front-matter-defaults
 defaults:
