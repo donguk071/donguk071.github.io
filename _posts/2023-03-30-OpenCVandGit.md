@@ -2,7 +2,7 @@
 layout: post
 title: "[환경구축] C / CPP + VScode + OpenCV + Git"
 date: 2023-03-30
-categories:  C/CPP 개발환경 VScode git ssh github
+categories:  C/CPP 개발환경
 photos: /assets/post_images/titleImg/c_opencv_git.png
 tags: [C/CPP,개발환경설정, VScode, git, ssh, github] 
 description: " VScode 환경에서의 OpenCV 라이브러리 사용과 Git ssh 정리"
