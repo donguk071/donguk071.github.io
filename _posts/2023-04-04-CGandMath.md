@@ -2,10 +2,10 @@
 layout: post
 title: "[배경지식] graphics and Math"
 date: 2023-04-04
-categories:  DeepLearning 배경지식
-photos: /assets/post_images/titleImg/lossfunction.png
-tags: [DeepLearning, lossfunction, mse, rmse, crossentropy] 
-description: "여러 lossfunction 을 정리하고 상황에 따른 loss function 을 선택하는 능력을 길러보자"
+categories:  graphics 배경지식
+photos: # /assets/post_images/titleImg/lossfunction.png
+tags: [graphics, math, 배경지식] 
+description: "graphics and Math 학습"
 published: true
 ---
 
@@ -141,3 +141,9 @@ screen space : x,y 로 pixel 이mapping 되며, 별도의 depth 값을 갖는다
 </aside>
 
 - convention : 표현의 약속 규율 통일을 의미
+
+<br/>
+
+궁금한 점이 있다면 남겨주세요! 함께 고민해보겠습니다.
+
+------------------------
