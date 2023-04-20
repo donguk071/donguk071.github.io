@@ -1,12 +1,13 @@
 ---
 layout: post
 title: "[배경지식] graphics and Math"
-date: 2023-04-04
+date: 2023-04-18
 categories:  graphics 배경지식
-photos: # /assets/post_images/titleImg/lossfunction.png
+photos: /assets/post_images/titleImg/CGM.png
 tags: [graphics, math, 배경지식] 
 description: "graphics and Math 학습"
 published: true
+use_math: true
 ---
 
 # Computer graphics and Math
