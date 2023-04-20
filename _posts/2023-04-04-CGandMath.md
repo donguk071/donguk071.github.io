@@ -11,7 +11,12 @@ published: true
 
 # Computer graphics and Math
 
+<br/>
+<br/>
+
 ## 1. **column major, row major**
+
+<br/>
 
 2차원 이상의 배열을 저장할 때 적용되는 개념이다. 고차원의 배열에 경우일 지라도 결국 저장장치에는 1차원으로 저장된다. 이때 column major은 새로(열)순으로 row major은 가로(행)순으로 저장이 된다.
 
@@ -85,21 +90,38 @@ RHS : 주로 column major와 함께 사용된다.
 
 </aside>
 
+<br/>
+
 ## 2. Scene Graph
+
+<br/>
 
 ![Untitled](/assets/post_images/CGandMath/Untitled%202.png)
 
 graph 나 tree 와 유사한 hieraticial구조로 node를 저장하는 것, 이러한 구조가 obj 이동의 연산을 더욱 쉽게 만들어주며, 이는 그래픽스에서 너무나 중요하고 필수적인 구조이다 (저명한 이야기기 때문에 따로 자세한 설명은 생략하도록 하겠다)
 
+<br/>
+
+
 ## 3. Homogeneous Coordinates
+
+<br/>
 
 왜 x,y,z 축만이 존재하는 좌표계에서 4x4의 transformation matrix 를 사용할까?  바로 rotation과 translation을 하나의 행렬로 정의하기 위해서 이다. 
 
+<br/>
+
 ## 4. space transform
+
+<br/>
 
 앞서 계속 transform 이라는 용어를 사용하였다. transform은 어떠한 물체 등의 중심 좌표를 바꾸는 과정 혹은 matrix 라고 볼 수 있다.
 
-## 4. **rendering**
+<br/>
+
+## 5. rendering
+
+<br/>
 
 3d scene 을 2d 이미지로 변환 투영하는 과정을 의미한다. 가볍게 개념정도만  정리하고 넘어가겠다.
 
