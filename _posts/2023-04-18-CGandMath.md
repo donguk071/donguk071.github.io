@@ -9,10 +9,11 @@ description: "graphics and Math 학습"
 published: true
 use_math: true
 ---
+<br/>
+<br/>
 
 # Computer graphics and Math
 
-<br/>
 <br/>
 
 ## 1. **column major, row major**
