@@ -1,0 +1,121 @@
+---
+layout: post
+title: "[배경지식] graphics and Math"
+date: 2023-04-04
+categories:  DeepLearning 배경지식
+photos: /assets/post_images/titleImg/lossfunction.png
+tags: [DeepLearning, lossfunction, mse, rmse, crossentropy] 
+description: "여러 lossfunction 을 정리하고 상황에 따른 loss function 을 선택하는 능력을 길러보자"
+published: true
+---
+
+# Computer graphics and Math
+
+## 1. **column major, row major**
+
+2차원 이상의 배열을 저장할 때 적용되는 개념이다. 고차원의 배열에 경우일 지라도 결국 저장장치에는 1차원으로 저장된다. 이때 column major은 새로(열)순으로 row major은 가로(행)순으로 저장이 된다.
+
+![Untitled](/assets/post_images/CGandMath/Untitled.png)
+
+![Untitled](/assets/post_images/CGandMath/Untitled%201.png)
+
+이러한 특징으로 인하여 메모리 주소에 대한 접근 방법이 달라진다. 예를 들어 column/row major별 메모리 주소는 어떻게 달라질까? 
+
+ex) a[3][4] 크기인 int형 2차원 배열에서 a[x][y]의 메모리 주소는 어떻게 될까?
+
+```cpp
+//address a[x][y] in row major
+&a[0][0] + (4*x + y)*4
+
+//address a[x][y] in column major
+&a[0][0] + (4*y + x)*4
+```
+
+> row major : C/C++/Objective-C (for C-style arrays), DirectX
+col major : OpenGl,glm, S-Plus, R
+> 
+
+row major 은 평소 프로그래밍 언어에서 2차원 배열을 저장하던 방식으로 직관적이지만, tranform 연산과 cache 관점에서는 비효율적이기 때문에 col major가 등장하였다. 
+
+ex) Matrix 선언시 환경에 따라 잘 선언해야한다
+
+```python
+#저장하고 싶은 matrix(row major 기준)
+mat4(
+  1.0, 5.0, 9.0, 13.0,
+  2.0, 6.0, 10.0, 14.0,
+  3.0, 7.0, 11.0, 15.0,
+  4.0, 8.0, 12.0, 16.0
+);
+
+//panda 3d로 저장
+LMatrix4F.__init__(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16)
+
+#실제로 저장된 값(row major 기준)
+transpose(mat4(
+  1.0, 5.0, 9.0, 13.0,
+  2.0, 6.0, 10.0, 14.0,
+  3.0, 7.0, 11.0, 15.0,
+  4.0, 8.0, 12.0, 16.0
+);
+#예시가 상당히 복잡하다 잘못만든듯ㅜㅜ
+```
+
+Transform 단계의 주의 사항
+
+이러한 구조는 컴퓨터 그래픽스에서 transform시 행렬 연산의 순서가 변한다. 행렬곱에는 결합법칙( associative law )이 적용되지만 교환법칙( communitative law )은 적용되지 않기 때문이다. 
+
+> row major :  Model T * World T * View  T * Projection T (순차적으로 ,append)
+col major : Projection T * View T * World T * Model T (먼 변환이 앞에 ,stack )
+굳이 이러한 row major을 사용하는 이유는 무엇일까?   앞서 말한 것처럼 직관적이고, transform 연산만 아니라면 문제될게 크게 없다.
+> 
+
+좀 더 직관적인 예를 들어 만약 물체 크기를 키우고(S) 이동 시키고(T) 싶다면
+
+col major의 경우 T*S 의 과정을 거치며, row major의 경우 S*T의 과정을 거친다.
+
+> LHS : 주로 row major와 함께 사용된다.
+RHS : 주로 column major와 함께 사용된다.
+반드시 그런건 아니다. ex) panda3d
+> 
+> - 각 좌표계  사이 변환을 원한다면 y 축 반전을 시켜주면 된다
+
+<aside>
+💡 필자가 주로 사용하는 Unreal Engine의 경우 CPU, GPU 모두 row major 이기에 pre multiplied 방식을 사용하면 된다. 하지만 GLSL의 경우 column major을 사용하기 때문에 UE 프로젝트와 연동하여 shader coding을 할 경우 주의하여야 할 것 같다. (transforse 관련)
+
+</aside>
+
+## 2. Scene Graph
+
+![Untitled](/assets/post_images/CGandMath/Untitled%202.png)
+
+graph 나 tree 와 유사한 hieraticial구조로 node를 저장하는 것, 이러한 구조가 obj 이동의 연산을 더욱 쉽게 만들어주며, 이는 그래픽스에서 너무나 중요하고 필수적인 구조이다 (저명한 이야기기 때문에 따로 자세한 설명은 생략하도록 하겠다)
+
+## 3. Homogeneous Coordinates
+
+왜 x,y,z 축만이 존재하는 좌표계에서 4x4의 transformation matrix 를 사용할까?  바로 rotation과 translation을 하나의 행렬로 정의하기 위해서 이다. 
+
+## 4. space transform
+
+앞서 계속 transform 이라는 용어를 사용하였다. transform은 어떠한 물체 등의 중심 좌표를 바꾸는 과정 혹은 matrix 라고 볼 수 있다.
+
+## 4. **rendering**
+
+3d scene 을 2d 이미지로 변환 투영하는 과정을 의미한다. 가볍게 개념정도만  정리하고 넘어가겠다.
+
+- World(Model) transform : 객체(material, light source)를 world space로 보내는 과정으로 opengl에서는 Model transform 이라고 부른다.
+- Viewing transform : World space to Camera space (경우에 따라 다르지만 일반적으로 camera model transform의 inverse transform이 될 수 있다)
+    - camera space 카메라의 viewing direction은 일반적으로 -z 축을 바라보도록 설계된다. (따라서 Scene에 보이는 물체들은 -z 좌표상에 위치하게 된다)
+        - lookat interface : Lookat(position, viewing vector, up vector)의 3가지 파라미터를 통해 view transform을 얻을 수 있다, 그럼 뭐 응용 쌉가능이죠? 좌표 두개랑 알면, v에 음수값? lookat 에 inverse 취하면 model transform
+- Projection transform : Camera space to Projection space (perspective, orthogonal) opengl, directX 차이 발생, 오른손 → 왼손좌표계로 변환(depth test 시 음수 계산이 더욱 오래 걸리기에 변환)
+- Viewport Transform :  Projection space에서 cliping등의 과정을 거쳐 최종적으로 rendering 에 대상이 된 값을 Screen Space의 값으로 변환
+
+위 과정은 다소 복잡한 과정이기도 하고 Screen Space to World Space 같은 내용도 자세히 다루고 싶기 때문에 기회가 된다면 별도로 정리해 보겠다. 
+
+<aside>
+💡 world space : 3d로 되어있은 가상 세계
+screen space : x,y 로 pixel 이mapping 되며, 별도의 depth 값을 갖는다.(?!)
+
+</aside>
+
+- convention : 표현의 약속 규율 통일을 의미
