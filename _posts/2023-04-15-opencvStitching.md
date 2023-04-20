@@ -1,11 +1,11 @@
 ---
 layout: post
 title: "[OpenCV] image stitching (panorama)"
-date: 2023-04-16
+date: 2023-04-15
 categories: stitching OpenCV
 photos: /assets/post_images/titleImg/imagestitching.png
 tags: [image, panorama ,stitching, OpenCV] 
-description: "Liif(Learning Continuous Image Representation with Local Implicit Image Function) 꼼꼼히 리뷰하며 논문 읽는 능력을 길러보자"
+description: "image stitching (panorama) 과정을 공부해보자"
 published: true
 use_math: true
 ---
@@ -14,7 +14,9 @@ use_math: true
 <br/>
 
 
-# opencv image stitching panorama
+# opencv image stitching(panorama)
+
+## image stitching
 
 <br/>
 1년 전쯤 CV를 공부하다가 작성한 내용이 생각나 다시 정리하여 본다.이하 내용은 개념 및 이론적인 내용보다는 코드를 설명이 대부분이다. 또한 하드 코딩 되어 있는 부분이 많아 좋은 코드라고 말하지는 못하겠다….
@@ -225,6 +227,8 @@ Blending 전후 사진을 비교하여 본다면 크게 체감이 될 정도의 
 ![Untitled](/assets/post_images/panorama/Untitled%208.png)
 
 앞서 말한것과 같은 과정을 진행하면 오른쪽과 같은 이미지를 얻을수 있으며. 기존 검은색 점 같은 noise들도 모두 사라진 것을 확인이 가능하다. 전체적인 색 대비는 거의 사라졌지만 전체적으로 너무 이미지의 대비가 흐려진 것을 확인가능하다. 따라서 해당 작업은 진행하지 않는 것이 적합하다고 판단하였다.
+
+이 방법이 아니더라고 다양한 해결 방법을 시도하여 볼 수 있다.(딥러닝 관점에서 접근해도 좋을 듯)
 
 ## 코드개선
 
