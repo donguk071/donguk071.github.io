@@ -19,11 +19,13 @@ use_math: true
    
 ## Visual studio code 에서 c/cpp 환경구축
 <br/>
-이하 내용은 전부 window 환경을 전제한다.
+이하 내용은 window 환경을 전제한다.
+
 <br/>
 
 <aside>
-💡 c/cpp 개발 환경을 vscode에서 구축하는 방법을 학습한다. visual studio와 같은 c 개발에 용이한 환경을 만들기 위해서는 CMake, LLVM-Clang, Ninja를 설치하여야 한다.
+
+c/cpp 개발 환경을 vscode에서 구축하는 방법을 학습한다. visual    studio와 같은 c 개발에 용이한 환경을 만들기 위해서는 CMake LLVM-Clang, Ninja를 설치하여야 한다.
 
 </aside>
 

@@ -2,7 +2,7 @@
 layout: post
 title: "[OpenCV] image stitching (panorama)"
 date: 2023-04-15
-categories: stitching OpenCV
+categories: CV OpenCV
 photos: /assets/post_images/titleImg/imagestitching.png
 tags: [image, panorama ,stitching, OpenCV] 
 description: "image stitching (panorama) 과정을 공부해보자"
