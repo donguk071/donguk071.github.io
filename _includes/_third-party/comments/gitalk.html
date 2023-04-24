@@ -8,7 +8,7 @@
 
 <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
 <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-<script type="text/javascript">
+<!-- <script type="text/javascript">
       var gitalk = new Gitalk({
         clientID: '{{ site.gitalk.clientID }}',
         clientSecret: '{{ site.gitalk.clientSecret }}',
@@ -21,8 +21,22 @@
         distractionFreeMode: true
       });
       gitalk.render('gitalk-container');
+</script> -->
+<script src="https://giscus.app/client.js"
+        data-repo="donguk071/donguk071.github.io"
+        data-repo-id="MDEwOlJlcG9zaXRvcnkzMTkyOTQ2MDM="
+        data-category="General"
+        data-category-id="DIC_kwDOEwgMi84CVLEM"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="ko"
+        crossorigin="anonymous"
+        async>
 </script>
-
 {% endif %}
 
 {% endunless %}
