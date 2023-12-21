@@ -37,7 +37,9 @@ ssh -T git@github.com #깃허브와 연결해준다
 #git 설정이 처음인 사람들은 git config 를 통해 이메일과 유저명을 추가적으로 등록해주어야한다
 ```
 
-![Untitled](/assets/post_images/vscSetting/Untitled4.png)
+<br/>
+<img src="/assets/post_images/vscSetting/Untitled4.png" style="border:0;">
+<br/>
 
 SSH key등록을 하는 github 설정 창이다. 만약 모든 과정을 잘 마무리하였다면 문제없이 SSH를 이용하여 프로젝트를 clone해올 수 있을 것이다. 
 
@@ -51,7 +53,7 @@ SSH key등록을 하는 github 설정 창이다. 만약 모든 과정을 잘 마
     
     [https://opencv.org/releases/](https://opencv.org/releases/)
     
-2. 프로젝트 root에  빈 thrid_party 폴더를 생성한다.
+2. 프로젝트 root에 빈 thrid_party 폴더를 생성한다.
 3. 다운 받은 opencv exe파일을 실행하고 앞서 만든 thrid_party의 경로로 설치 경로를 바꿔준다. 
 4. cmake 파일이 다운 받은 opencv 폴더를 인식할 수 있도록 cmakelists.txt 를 수정한다.
     
@@ -74,16 +76,19 @@ SSH key등록을 하는 github 설정 창이다. 만약 모든 과정을 잘 마
     #https://www.tuwlab.com/ece/27260
     ```
     
-5. 이제 Variant를 Release로 설정한 후  build all 을 시도하여본다 마찬가지로 status bar에서 조절이 가능하다.
-    
-    ![Untitled](/assets/post_images/vscSetting/Untitled5.png)
+5. 이제 Variant를 Release로 설정한 후 build all 을 시도하여본다 마찬가지로 status bar에서 조절이 가능하다.
+
+<br/>
+<img src="/assets/post_images/vscSetting/Untitled5.png" style="border:0;">
+<br/>
+
  
 6. 이제 원하는 cpp 파일을 실행하거나 디버그 하면 된다!(status bar을 이것저것 눌러보며 기능을 탐색하는 것을 추천한다.)
 
-![Untitled](/assets\post_images\vscSetting\Untitled6.png)
-
-
 <br/>
+<img src="/assets/post_images/vscSetting/Untitled6.png" style="border:0;">
+<br/>
+
 
 궁금한 점이 있다면 남겨주세요! 함께 고민해 보겠습니다.
 
